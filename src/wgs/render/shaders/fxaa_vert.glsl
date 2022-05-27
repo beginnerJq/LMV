@@ -1,0 +1,1 @@
+module.exports = "uniform vec2 uResolution;\nvarying vec2 vPos;\nvarying vec4 vPosPos;\nvoid main() {\n    vPos = uv;\n    vPosPos.xy = uv + vec2(-0.5, -0.5) * uResolution;\n    vPosPos.zw = uv + vec2( 0.5,  0.5) * uResolution;\n    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}\n";

@@ -1,0 +1,1 @@
+module.exports = "#include <shadowmap_decl_frag>\nvoid main() {\n    float shadowIntensity = 0.5 * (1.0 - getShadowValue());\n    gl_FragColor = vec4(0.0, 0.0, 0.0, shadowIntensity);\n}\n";

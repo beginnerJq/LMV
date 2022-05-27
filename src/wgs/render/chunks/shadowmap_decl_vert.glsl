@@ -1,0 +1,1 @@
+module.exports = "\n#ifdef USE_SHADOWMAP\nvarying vec4 vShadowCoord;\nuniform mat4 shadowMatrix;\n#endif\n";

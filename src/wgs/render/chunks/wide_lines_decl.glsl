@@ -1,0 +1,1 @@
+module.exports = "\n#ifdef WIDE_LINES\nattribute vec3 prev;\nattribute vec3 next;\nattribute float side;\nuniform vec2 view_size;\nvec2 to2d(vec4 i) {\n  return i.xy / i.w;\n}\n#endif\n";

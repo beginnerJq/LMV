@@ -1,0 +1,1 @@
+module.exports = "#include <pack_depth>\n#if NUM_CUTPLANES > 0\nvarying vec3 vWorldPosition;\n#endif\n#include <cutplanes>\nvoid main() {\n#if NUM_CUTPLANES > 0\n    checkCutPlanes(vWorldPosition);\n#endif\n    float depth = gl_FragCoord.z / gl_FragCoord.w;\n    depth = 1.0 - depth;\n    gl_FragColor = packDepth(depth);\n}\n";

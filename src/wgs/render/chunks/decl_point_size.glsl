@@ -1,0 +1,1 @@
+module.exports = "uniform float point_size;";

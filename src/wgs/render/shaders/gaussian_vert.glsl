@@ -1,0 +1,1 @@
+module.exports = "varying vec2 vUv;\nvoid main() {\n#if defined(HORIZONTAL) && defined(FLIP_UV)\n    vUv = vec2(uv.x, 1.0-uv.y);\n#else\n    vUv = vec2(uv.x, uv.y);\n#endif\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n}\n";

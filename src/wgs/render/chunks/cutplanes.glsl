@@ -1,0 +1,1 @@
+module.exports = "#if NUM_CUTPLANES > 0\nuniform vec4 cutplanes[NUM_CUTPLANES];\nvoid checkCutPlanes(vec3 worldPosition) {\n    for (int i=0; i<NUM_CUTPLANES; i++) {\n        if (dot(vec4(worldPosition, 1.0), cutplanes[i]) > 0.0) {\n            discard;\n        }\n    }\n}\n#endif\n";

@@ -1,0 +1,1 @@
+module.exports = "uniform sampler2D tDiffuse;\nuniform vec2 resolution;\nvoid main() {\n    vec2 ssP = vec2(gl_FragCoord.xy);\n    ssP = ssP * 2.0 + mod(ssP, 2.0);\n    ssP = (ssP + 0.5) * resolution * 0.5;\n    gl_FragColor = texture2D(tDiffuse, ssP);\n}\n";

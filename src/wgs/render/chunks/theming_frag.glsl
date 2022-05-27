@@ -1,0 +1,1 @@
+module.exports = "gl_FragColor.rgb = mix(gl_FragColor.rgb, themingColor.rgb, themingColor.a);\n";

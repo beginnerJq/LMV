@@ -1,0 +1,1 @@
+module.exports = "float averageOfFloat3(in vec3 value) { \n    const float oneThird = 1.0 / 3.0; \n    return dot(value, vec3(oneThird, oneThird, oneThird)); \n} \n";

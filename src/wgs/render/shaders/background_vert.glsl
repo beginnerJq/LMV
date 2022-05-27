@@ -1,0 +1,1 @@
+module.exports = "uniform vec3 color1;\nuniform vec3 color2;\nvarying vec2 vUv;\nvarying vec3 vColor;\nvoid main() {\n    if (uv.y == 0.0)\n        vColor = color2;\n    else\n        vColor = color1;\n    vUv = uv;\n    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}\n";

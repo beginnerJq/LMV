@@ -1,0 +1,1 @@
+module.exports = "#if NUM_CUTPLANES > 0\nvarying vec3 vWorldPosition;\n#endif\nvoid main() {\n    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );;\n#if NUM_CUTPLANES > 0\n    vec4 worldPosition = modelMatrix * vec4( position, 1.0 );\n    vWorldPosition = worldPosition.xyz;\n#endif\n}\n";

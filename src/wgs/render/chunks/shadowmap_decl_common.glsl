@@ -1,0 +1,1 @@
+module.exports = "\nuniform float shadowESMConstant;\nuniform float shadowMapRangeMin;\nuniform float shadowMapRangeSize;\n";

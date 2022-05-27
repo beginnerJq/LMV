@@ -1,0 +1,1 @@
+module.exports = "\n#ifdef USE_SHADOWMAP\n{\n    vec4 worldPosition = modelMatrix * vec4( position, 1.0 );\n    vShadowCoord = shadowMatrix * worldPosition;\n}\n#endif\n";

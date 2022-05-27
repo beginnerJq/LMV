@@ -1,0 +1,5 @@
+export const INTERPOLATION_TYPE = {
+    LINEAR: 0,
+    CATMULLROM: 1,
+    CATMULLROM_FORWARD: 2
+};

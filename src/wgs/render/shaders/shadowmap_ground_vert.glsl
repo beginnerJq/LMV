@@ -1,0 +1,1 @@
+module.exports = "#include <shadowmap_decl_vert>\nvoid main() {\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n#include <shadowmap_vert>\n}\n";

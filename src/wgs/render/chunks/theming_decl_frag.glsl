@@ -1,0 +1,1 @@
+module.exports = "uniform vec4 themingColor;\n";

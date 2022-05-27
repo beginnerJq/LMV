@@ -1,0 +1,1 @@
+module.exports = "\n#ifdef USE_VERTEX_ID\nvId = id;\n#endif\n";

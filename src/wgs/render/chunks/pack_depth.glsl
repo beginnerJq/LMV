@@ -1,0 +1,1 @@
+module.exports = "\nvec4 packDepth( const in float depth ) {\n    vec4 enc = vec4(1.0, 255.0, 65025.0, 160581375.0) * depth;\n    enc = fract(enc);\n    enc -= enc.yzww * vec4(1.0/255.0,1.0/255.0,1.0/255.0,0.0);\n    return enc;\n}\nfloat unpackDepth( const in vec4 rgba_depth ) {\n    return dot( rgba_depth, vec4(1.0, 1.0/255.0, 1.0/65025.0, 1.0/160581375.0) );\n}\n";

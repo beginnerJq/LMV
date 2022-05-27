@@ -1,0 +1,1 @@
+module.exports = "#ifdef USE_VERTEX_ID\nattribute vec3 id;\nvarying   vec3 vId;\n#endif\n";
